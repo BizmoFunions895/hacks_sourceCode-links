@@ -5,7 +5,7 @@ if (typeof document.dev_env != "undefined") {
 }
 else {
   //get resources off of github to not inflate the jsdelivr stats
-  base_url = "https://raw.githubusercontent.com/BizmoFunions895/hacks_sourceCode-links/main/edpuzzle-source.js?token=GHSAT0AAAAAAB6VJWRTC6ZOT5PU7CFPDPPOY7LAAXQ";
+  base_url = "https://github.com/BizmoFunions895/Edpuzzle-skip-and-auto-answer/blob/main/EdpuzzleHacks/main.js";
 }
 
 function http_get(url, callback, headers=[], method="GET", content=null) {
