@@ -5,7 +5,7 @@ if (typeof document.dev_env != "undefined") {
 }
 else {
   //get resources off of github to not inflate the jsdelivr stats
-  base_url = "https://raw.githubusercontent.com/BizmoFunions895/hacks_sourceCode-links/main/edpuzzle-source.js";
+  base_url = "https://raw.githubusercontent.com/ading2210/edpuzzle-answers/main";
 }
 
 function http_get(url, callback, headers=[], method="GET", content=null) {
@@ -24,6 +24,9 @@ function http_get(url, callback, headers=[], method="GET", content=null) {
 }
 
 function init() {
+  if (window.location.hostname == "edpuzzle.hs.vc") {
+    alert("To use this, drag this button into your bookmarks bar. Then, run it when you're on an Edpuzzle assignment.");
+  }
   else if ((/https{0,1}:\/\/edpuzzle.com\/assignments\/[a-f0-9]{1,30}\/watch/).test(window.location.href)) {
     getAssignment();
   }
@@ -190,12 +193,11 @@ function openPopup(assignment) {
     <p style="font-size: 12px" id="loading_text"></p>
   </div>
   <hr>
-  <p style="font-size: 12px">Made by: 
-  <a target="_blank" href="https://github.com/BizmoFunions895">BizmoFunions895</a> 
-  on Github | Website: <a target="_blank" href="https://edpuzzle.hs.vc">edpuzzle.hs.vc
-  </a> | Source code: <a target="_blank" href="https://github.com/ading2210/edpuzzle-answers">BizmoFunions895/edpuzzle-answers</a></p>`;
-  
-  
+  <p style="font-size: 12px">Made by: <a target="_blank" 
+  href="https://github.com/BizmoFunions895">BizmoFunions895</a> 
+  on Github | Website: <a target="_blank" href="about:blank">Not Available</a> | 
+  Source code: <a target="_blank" href="https://github.com/BizmoFunions895/Edpuzzle-skip">BizmoFunions895/Edpuzzle-skip</a></p>`;
+ 
   popup = window.open("about:blank", "", "width=600, height=400");
   popup.document.write(base_html);
 
