@@ -4,7 +4,6 @@ if (typeof document.dev_env != "undefined") {
   base_url = document.dev_env;
 }
 else {
-  //get resources off of github to not inflate the jsdelivr stats
   base_url = "https://raw.githubusercontent.com/ading2210/edpuzzle-answers/main";
 }
 
